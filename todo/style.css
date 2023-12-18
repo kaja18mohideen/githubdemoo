@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+.todo-container {
+  background-color: #fcefee;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.add-todo,
+.filter-todos,
+.todos {
+  margin-bottom: 20px;
+}
+
+.todo-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-card div {
+  flex: 1;
+}
+
+.todo-card.completed {
+  background-color: #d4edda; /* Green for Completed */
+}
+
+.todo-card.not-completed {
+  background-color: #f8d7da; /* Red for Not Completed */
+}
+
+.todo-actions button {
+  margin-left: 5px;
+  cursor: pointer;
+  background-color: #4caf50; /* Green */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.todo-actions select {
+  padding: 5px;
+  background-color: #3498db; /* Blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.add-todo button {
+  background-color: #e74c3c; /* Red */
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}

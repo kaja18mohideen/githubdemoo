@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="todo-container">
+    <div class="add-todo">
+      <input type="text" placeholder="Task Name" id="taskName">
+      <input type="text" placeholder="Description" id="taskDescription">
+      <button onclick="addTodo()">Add Todo</button>
+    </div>
+    <div class="filter-todos">
+      <label for="filterStatus">Filter Status:</label>
+      <select id="filterStatus" onchange="setFilterStatus()">
+        <option value="All">All</option>
+        <option value="Completed">Completed</option>
+        <option value="Not Completed">Not Completed</option>
+      </select>
+    </div>
+    <div class="todos" id="todos">
+    
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+
+  
+</body>
+</html>
+
